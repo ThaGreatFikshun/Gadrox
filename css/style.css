@@ -695,8 +695,8 @@ section {
 .footer .credit span {
   color: var(--yellow);
 }
-
-@media (max-width: 1200px) {
+/* Desktop and tablet styles */
+@media (min-width: 1200px) {
   .header {
     padding: 1.5rem 2rem;
   }
@@ -705,6 +705,8 @@ section {
     padding: 3rem 5%;
   }
 }
+
+/* Tablet styles */
 @media (max-width: 991px) {
   html {
     font-size: 55%;
@@ -736,6 +738,8 @@ section {
     margin: 2rem;
   }
 }
+
+/* Mobile styles */
 @media (max-width: 768px) {
   .header .search-form {
     width: 90%;
@@ -754,9 +758,18 @@ section {
     font-size: 3rem;
   }
 }
+
+/* Mobile portrait styles */
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+}
+
+/* Mobile landscape styles */
+@media (max-width: 640px) {
+  html {
+    font-size: 60%;
   }
 }
 
